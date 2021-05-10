@@ -1,3 +1,11 @@
+:root {
+  --color-blue-60: #0f62fe;
+  --color-gray-10: #f2f4f8;
+  --color-gray-20: #dde1E6;
+
+  --color-primary: var(--color-blue-60);
+}
+
 html,
 body {
   padding: 0;
