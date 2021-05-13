@@ -1,0 +1,36 @@
+@use './variables' as *;
+
+.menu {
+  composes: block from './block.css';
+}
+
+.inner {
+  composes: container from './container.css';
+  display: grid;
+  grid-template-columns: repeat(3, minmax(240px, 1fr));
+  grid-gap: $gap-normal;
+
+  @media (max-width: $breakpoint-small) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.link {
+  padding: 1.5rem;
+  border: 1px solid $color-gray-lighter;
+  color: inherit;
+  text-align: center;
+  text-decoration: none;
+  transition: color 0.2s ease-out, border-color 0.2s ease-out;
+
+  &:hover,
+  &:focus,
+  &:active {
+    border-color: $color-primary-light;
+    color: $color-primary-light;
+  }
+
+  h2 {
+    font-size: $size-large;
+  }
+}
