@@ -1,0 +1,104 @@
+@use 'sass:color';
+
+$color-black: #000;
+$color-white: #fff;
+
+$color-gray-darkest: #21272a;
+$color-gray-darker: #343a3f;
+$color-gray-dark: #697077;
+$color-gray: #878d96;
+$color-gray-light: #c1c7cd;
+$color-gray-lighter: #dde1e6;
+$color-gray-lightest: #f2f4f8;
+
+$color-blue: #154184;
+$color-red: hsl(351, 84%, 44%);
+$color-green: hsl(177, 69%, 31%);
+$color-yellow: hsl(44, 98%, 58%);
+
+$color-primary: $color-blue;
+$color-primary-light: color.scale($color-primary, $lightness: 20%);
+$color-primary-lighter: color.scale($color-primary, $lightness: 40%);
+$color-primary-lightest: color.scale($color-primary, $lightness: 80%);
+$color-primary-dark: color.scale($color-primary, $lightness: -20%);
+$color-primary-darker: color.scale($color-primary, $lightness: -40%);
+$color-primary-darkest: color.scale($color-primary, $lightness: -80%);
+
+$color-secondary: $color-red;
+$color-secondary-light: color.scale($color-secondary, $lightness: 20%);
+$color-secondary-lighter: color.scale($color-secondary, $lightness: 40%);
+$color-secondary-lightest: color.scale($color-secondary, $lightness: 80%);
+$color-secondary-dark: color.scale($color-secondary, $lightness: -20%);
+$color-secondary-darker: color.scale($color-secondary, $lightness: -40%);
+$color-secondary-darkest: color.scale($color-secondary, $lightness: -80%);
+
+$color-success: $color-green;
+$color-success-light: color.scale($color-success, $lightness: 20%);
+$color-success-lighter: color.scale($color-success, $lightness: 40%);
+$color-success-lightest: color.scale($color-success, $lightness: 80%);
+$color-success-dark: color.scale($color-success, $lightness: -20%);
+$color-success-darker: color.scale($color-success, $lightness: -40%);
+$color-success-darkest: color.scale($color-success, $lightness: -80%);
+
+$color-warning: $color-yellow;
+$color-warning-light: color.scale($color-warning, $lightness: 20%);
+$color-warning-lighter: color.scale($color-warning, $lightness: 40%);
+$color-warning-lightest: color.scale($color-warning, $lightness: 80%);
+$color-warning-dark: color.scale($color-warning, $lightness: -20%);
+$color-warning-darker: color.scale($color-warning, $lightness: -40%);
+$color-warning-darkest: color.scale($color-warning, $lightness: -80%);
+
+$color-danger: $color-red;
+$color-danger-light: color.scale($color-danger, $lightness: 20%);
+$color-danger-lighter: color.scale($color-danger, $lightness: 40%);
+$color-danger-lightest: color.scale($color-danger, $lightness: 80%);
+$color-danger-dark: color.scale($color-danger, $lightness: -20%);
+$color-danger-darker: color.scale($color-danger, $lightness: -40%);
+$color-danger-darkest: color.scale($color-danger, $lightness: -80%);
+
+$radius-normal: 2px;
+$radius-medium: 4px;
+$radius-large: 8px;
+$radius-rounded: 290486px;
+
+$font-family-sans-serif: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans,
+  Droid Sans, Helvetica Neue, sans-serif;
+$font-family-primary: $font-family-sans-serif;
+$font-family-secondary: $font-family-sans-serif;
+
+$weight-light: 300;
+$weight-normal: 400;
+$weight-medium: 500;
+$weight-semibold: 600;
+$weight-bold: 700;
+
+$size-1: 3rem;
+$size-2: 2.5rem;
+$size-3: 2rem;
+$size-4: 1.5rem;
+$size-5: 1.25rem;
+$size-6: 1rem;
+$size-7: 0.8rem;
+
+$size-small: $size-7;
+$size-normal: $size-6;
+$size-medium: $size-5;
+$size-large: $size-4;
+
+$sizes: (
+  'small': $size-small,
+  'normal': $size-normal,
+  'medium': $size-medium,
+  'large': $size-large,
+);
+
+$gap-small: 0.25rem;
+$gap-normal: 1rem;
+$gap-meduim: 1.5rem;
+$gap-large: 2rem;
+
+$breakpoint-small: 576px;
+$breakpoint-medium: 768px;
+$breakpoint-large: 992px;
+$breakpoint-larger: 1200px;
+$breakpoint-largest: 1400px;
