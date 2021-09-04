@@ -5,7 +5,7 @@ export default function PageHeader({ title, description = '' }) {
     <header className={styles.header}>
       <div className={styles.inner}>
         <h1 className={styles.title}>{title}</h1>
-        <h2 className={styles.description}>{description}</h2>
+        {description && <h2 className={styles.description}>{description}</h2>}
       </div>
     </header>
   );
