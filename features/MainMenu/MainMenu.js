@@ -1,11 +1,12 @@
 import Link from 'next/link';
-import styles from 'styles/MenuGrid.module.scss';
+import { MENU_ITEMS } from './constants';
+import styles from 'styles/MainMenu.module.scss';
 
-export default function MenuGrid({ menuItems }) {
+export default function MainMenu() {
   return (
     <nav className={styles.menu}>
       <div className={styles.inner}>
-        {menuItems.map((item) => (
+        {MENU_ITEMS.map((item) => (
           <Link key={item.id} href={item.url}>
             <a className={styles.link}>
               <h2>{item.title}</h2>
