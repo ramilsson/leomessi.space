@@ -1,0 +1,28 @@
+@use 'styles/variables' as *;
+
+.header {
+  composes: block from 'styles/elements/block.scss';
+  background-color: $color-gray-lightest;
+}
+
+.inner {
+  composes: container from 'styles/elements/container.scss';
+  display: flex;
+  flex-direction: column;
+  padding: 8rem 0;
+}
+
+.title {
+  display: block;
+  margin: 0 0 0.25em 0;
+  font-size: $size-2 * 2;
+  font-weight: $weight-bold;
+}
+
+.description {
+  display: block;
+  max-width: 800px;
+  margin: 0;
+  font-size: $size-3;
+  font-weight: $weight-normal;
+}

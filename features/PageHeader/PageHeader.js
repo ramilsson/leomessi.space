@@ -1,4 +1,4 @@
-import styles from 'styles/PageHeader.module.scss';
+import styles from './PageHeader.module.scss';
 
 export default function PageHeader({ title, description = '' }) {
   return (
