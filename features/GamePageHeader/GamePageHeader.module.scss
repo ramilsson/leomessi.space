@@ -1,0 +1,18 @@
+@use 'styles/variables' as *;
+
+.header {
+  composes: header from 'features/PageHeader/PageHeader.module.scss';
+}
+
+.inner {
+  composes: inner from 'features/PageHeader/PageHeader.module.scss';
+}
+
+.title {
+  composes: title from 'features/PageHeader/PageHeader.module.scss';
+}
+
+.result {
+  color: $color-warning;
+  white-space: nowrap;
+}

@@ -1,4 +1,4 @@
-import styles from 'styles/GamePageHeader.module.scss';
+import styles from './GamePageHeader.module.scss';
 
 export default function GamePageHeader({ game }) {
   const result = `${game.result.total[0]} : ${game.result.total[1]}`;
