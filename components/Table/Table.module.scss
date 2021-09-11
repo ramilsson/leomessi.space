@@ -1,0 +1,27 @@
+@use 'styles/variables' as *;
+
+$table-padding-x: 1em;
+$table-padding-y: 1em;
+$table-sizes: $sizes;
+
+.table {
+  width: 100%;
+  background-color: $color-white;
+  border-collapse: collapse;
+
+  tr {
+    border-bottom: 1px solid $color-gray-lightest;
+  }
+
+  th,
+  td {
+    padding: $table-padding-y $table-padding-x;
+    text-align: left;
+  }
+}
+
+@each $name, $size in $table-sizes {
+  .size-#{$name} {
+    font-size: $size;
+  }
+}

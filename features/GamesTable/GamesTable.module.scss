@@ -1,0 +1,25 @@
+@use 'styles/variables' as *;
+
+.gamesTable {
+  composes: table size-medium from 'components/Table/Table.module.scss';
+}
+
+th.resultCell,
+td.resultCell {
+  text-align: center;
+}
+
+.resultButton {
+  composes: button size-medium color-warning from 'components/Button/Button.module.scss';
+  font-weight: $weight-semibold;
+}
+
+td.titleCell {
+  color: $color-primary;
+  font-weight: $weight-semibold;
+}
+
+td.dateTimeCell {
+  font-weight: $weight-light;
+  color: $color-gray;
+}
