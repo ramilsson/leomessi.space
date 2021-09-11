@@ -2,7 +2,7 @@ import { HtmlHead, Header, PageHeader, MainMenu } from 'features';
 import { APP_TITLE, APP_DESCRIPTION } from 'constants/app';
 import { Main } from 'components';
 
-export default function Home() {
+export default function HomePage() {
   return (
     <>
       <HtmlHead title='Home' />
