@@ -1,0 +1,36 @@
+@use 'styles/variables' as *;
+
+$tag-line-height: 1.2;
+$tag-padding-x: 0.5em;
+$tag-padding-y: 0.25em;
+$tag-height: $tag-padding-y * 2 + $tag-line-height;
+$tag-sizes: $sizes;
+
+
+.tag {
+  display: inline-block;
+  height: $tag-height;
+  padding: $tag-padding-y $tag-padding-x;
+
+  background-color: $color-gray-lightest;
+  border-radius: $radius-normal;
+
+  font-size: $size-normal;
+  line-height: $tag-line-height;
+  white-space: nowrap;
+}
+
+@each $name, $size in $tag-sizes {
+  .size-#{$name} {
+    font-size: $size;
+  }
+}
+
+.color-primary {
+  background-color: $color-primary;
+  color: $color-white;
+}
+
+.color-warning {
+  background-color: $color-warning;
+}

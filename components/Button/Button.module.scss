@@ -1,0 +1,98 @@
+@use 'styles/variables' as *;
+@use 'styles/elements/control' as *;
+
+$button-sizes: $sizes;
+$button-transition: color 0.2s ease-out, background 0.2s ease-out;
+
+.button {
+  @extend %control;
+  background-color: $color-gray-lightest;
+  cursor: pointer;
+  text-align: center;
+  transition: $button-transition;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+
+@each $name, $size in $button-sizes {
+  .size-#{$name} {
+    font-size: $size;
+  }
+}
+
+.color-primary {
+  background-color: $color-primary;
+  color: $color-white;
+
+  &:hover {
+    background-color: $color-primary-dark;
+  }
+
+  &:active {
+    background-color: $color-primary-light;
+  }
+}
+
+.color-secondary {
+  background-color: $color-secondary;
+  color: $color-white;
+
+  &:hover {
+    background-color: $color-secondary-dark;
+  }
+
+  &:active {
+    background-color: $color-secondary-light;
+  }
+}
+
+.color-success {
+  background-color: $color-success;
+  color: $color-white;
+
+  &:hover {
+    background-color: $color-success-dark;
+  }
+
+  &:active {
+    background-color: $color-success-light;
+  }
+}
+
+.color-warning {
+  background-color: $color-warning;
+
+  &:hover {
+    background-color: $color-warning-dark;
+  }
+
+  &:active {
+    background-color: $color-warning-light;
+  }
+}
+
+.color-danger {
+  background-color: $color-danger;
+  color: $color-white;
+
+  &:hover {
+    background-color: $color-danger-dark;
+  }
+
+  &:active {
+    background-color: $color-danger-light;
+  }
+}
+
+.color-gray {
+  background-color: $color-gray;
+  color: $color-white;
+
+  &:hover {
+    background-color: $color-gray-dark;
+  }
+
+  &:active {
+    background-color: $color-gray-light;
+  }
+}
