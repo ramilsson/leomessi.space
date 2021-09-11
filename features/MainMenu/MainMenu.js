@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import { MENU_ITEMS } from './constants';
-import styles from 'styles/MainMenu.module.scss';
+import styles from './MainMenu.module.scss';
 
 export default function MainMenu() {
   return (

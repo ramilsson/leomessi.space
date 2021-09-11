@@ -1,11 +1,11 @@
-@use './variables' as *;
+@use 'styles/variables' as *;
 
 .menu {
-  composes: block from './block.css';
+  composes: block from 'styles/elements/block.scss';
 }
 
 .inner {
-  composes: container from './container.css';
+  composes: container from 'styles/elements/container.scss';
   display: grid;
   grid-template-columns: repeat(3, minmax(240px, 1fr));
   grid-gap: $gap-normal;
