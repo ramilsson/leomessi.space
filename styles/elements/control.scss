@@ -1,0 +1,26 @@
+@use 'styles/variables' as *;
+
+$control-line-height: 1.2;
+$control-padding-x: 0.75em;
+$control-padding-y: 0.4em;
+$control-sizes: $sizes;
+$control-height: $control-padding-y * 2 + $control-line-height;
+
+%control {
+  display: inline-block;
+  height: $control-height;
+  padding: $control-padding-y $control-padding-x;
+
+  border-radius: $radius-normal;
+  border: none;
+  outline-color: transparent;
+
+  font-family: $font-family-primary;
+  font-size: $size-normal;
+  font-weight: $weight-normal;
+  line-height: $control-line-height;
+
+  &:focus {
+    outline-color: $color-black;
+  }
+}
