@@ -1,0 +1,6 @@
+.content {
+}
+
+.inner {
+  composes: container from 'styles/elements/container.scss';
+}
