@@ -1,0 +1,12 @@
+.header {
+}
+
+.inner {
+  composes: container from 'styles/elements/container.scss';
+  display: flex;
+  padding: 1.5em 0;
+}
+
+.logo img {
+  display: block;
+}
