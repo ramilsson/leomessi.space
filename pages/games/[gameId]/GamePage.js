@@ -2,6 +2,8 @@ import React from 'react';
 import { API_URL } from 'constants/app';
 import { HtmlHead, Header, GamePageHeader } from 'features';
 import styles from './GamePage.module.scss';
+import dayjs from 'dayjs';
+import { DATETIME_FORMAT } from 'constants/date';
 
 export default function GamePage({ game }) {
   return (
@@ -15,7 +17,7 @@ export default function GamePage({ game }) {
             <p>
               <span className={styles.metaLabel}>Date</span>
               <br />
-              {game.datetime}
+              {dayjs(game.datetime).format(DATETIME_FORMAT)}
             </p>
             <p>
               <span className={styles.metaLabel}>Competition</span>

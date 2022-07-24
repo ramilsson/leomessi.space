@@ -1,6 +1,8 @@
 import Link from 'next/link';
 import { Tag } from 'components';
+import dayjs from 'dayjs';
 import styles from './GamesTable.module.scss';
+import { DATE_FORMAT } from 'constants/date';
 
 export default function GamesTable({ games }) {
   return (
@@ -33,7 +35,9 @@ function GameRow({ game }) {
 
   return (
     <tr>
-      <td className={styles.dateTimeCell}>{datetime.slice(0, 10)}</td>
+      <td className={styles.dateTimeCell}>
+        {dayjs(datetime).format(DATE_FORMAT)}
+      </td>
       <td>
         <Tag size='small'>{competition.name}</Tag>
       </td>
