@@ -4,8 +4,8 @@
   composes: table size-medium from 'components/Table/Table.module.scss';
 }
 
-th.resultCell,
-td.resultCell {
+.resultCell,
+.resultCell {
   text-align: center;
 }
 
@@ -14,12 +14,12 @@ td.resultCell {
   font-weight: $weight-semibold;
 }
 
-td.titleCell {
+.titleCell {
   color: $color-primary;
   font-weight: $weight-medium;
 }
 
-td.dateTimeCell {
+.dateTimeCell {
   font-weight: $weight-light;
   color: $color-gray;
 }

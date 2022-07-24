@@ -8,7 +8,7 @@ export default function GamesTable({ games }) {
       <thead>
         <tr>
           <th>Date</th>
-          <th></th>
+          <th>Competition</th>
           <th>Game</th>
           <th className={styles.resultCell}>Result</th>
         </tr>
@@ -25,11 +25,11 @@ export default function GamesTable({ games }) {
 function GameRow({ game }) {
   const { id, team, opponent, field, datetime, competition, result } = game;
   const title =
-    field === 1
+    field === 'HOME'
       ? `${team.name} – ${opponent.name}`
       : `${opponent.name} – ${team.name}`;
-  const [homeResult, awayResult] =
-    field === 1 ? result.total : result.total.slice().reverse();
+
+  const [homeResult, awayResult] = result.total;
 
   return (
     <tr>
